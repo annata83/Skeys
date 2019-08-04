@@ -15,7 +15,8 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new HtmlWebpackPlugin({
-        template: "./src/html/index.html",
+        template: "./src/pug/index.pug",
+				filename: "index.html",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -26,9 +27,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
-		new CleanWebpackPlugin({
-		// Simulate the removal of files default: false
-    dry: false,
+		new CleanWebpackPlugin({ 
     // Write Logs to Console// (Always enabled when dry is true) default: false
     verbose: false,
     // Automatically remove all unused webpack assets on rebuild default: true
@@ -37,16 +36,19 @@ module.exports = merge(common, {
     protectWebpackAssets: false,
 		})
   ],
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader, //3. Extract css into files
-          "css-loader", //2. Turns css into commonjs
-          "sass-loader" //1. Turns sass into css
-        ]
-      }
-    ]
-  }
+  module: {rules: [
+		{
+			test: /\.scss$/,
+			use: [
+				MiniCssExtractPlugin.loader, //3. Extract css into files
+				"css-loader", //2. Turns css into commonjs
+				"sass-loader" //1. Turns sass into css
+			]
+		},
+		{
+			test: /\.pug$/,
+			use: ["html-loader", "pug-html-loader"]
+		}
+	]
+	}
 });

@@ -1,0 +1,129 @@
+doctype html
+html
+	include ./includes/head.pug
+	body
+		include ./includes/navbar.pug
+		.i3main
+			.i3one.i3sectionGrid
+				h5 mod+u
+				p No Borders
+				h5 mod+y
+				p 2px Border
+				h5 mod+i
+				p Normal Border
+				h5 mod+D
+				p Deactivate Gaps
+				h5 mod+G
+				p Activate Gaps
+			.i3two.i3sectionGrid
+				h5 mod+Q
+				p Kill Focused
+				h5 mod+a
+				p Focus Parent
+				h5 mod+h
+				p Focus Left
+				h5 mod+j
+				p Focus Down
+				h5 mod+k
+				p Focus Up
+				h5 mod+l
+				p Focus Right
+				h5 mod+Left
+				p Focus Left
+				h5 mod+Down
+				p Focus Down 
+				h5 mod+Up 
+				p Focus Up
+				h5 mod+right
+				p Focus Right
+			.i3three.i3sectionGrid
+				h5 mod+H
+				p Move Left
+				h5 mod+J
+				p Move Down
+				h5 mod+K
+				p Move UP
+				h5 mod+L
+				p Move Right
+			.i3four.i3sectionGrid
+				h5 mod+q
+				p Toogle Split
+				h5 mod+s
+				p Stacking Layout
+				h5 mod+w
+				p Tabbed Layout
+				h5 mod+e 
+				p Toogle Split Layout
+			.i3five.i3sectionGrid
+				h5 mod+-
+				p Show Scratchpad
+				h5 mod+_
+				p Move to Scratchpad
+			.i3six.i3sectionGrid
+				h5 mod+B
+				p Move Win to Back&Forth
+				h5 mod+b
+				p Workspace Back&Forth
+				h5 mod=[C]+Left
+				p Left Workspace
+				h5 mod+[C]+Right
+				p Right Workspace
+			.i3seven.i3sectionGrid
+				h5 mod+Return
+				p Terminal
+				h5 mod+R
+				p Ranger
+				h5 mod+d
+				p Dmenu
+				h5 mod+z
+				p Xlunch
+				h5 Browser
+				p Chromium
+				h5 Mail
+				p Neomutt
+			.i3eigth.i3sectionGrid
+				h5 mod+space
+				p Jump "tilling-Floating"
+				h5 mod+[S]+space
+				p Toogle Floating
+				h5 mod+r
+				p Toogle Resize
+				h5 mod+s
+				p Toogle Sticky
+				h5 mod+[C]+l
+				p 	Sticky Bottom Right
+				h5 mod+[C]+Left
+				p Sticky Bottom Left
+			.i3nine.i3sectionGrid
+				h5 HOME
+				p Fullscreen Screenshot
+				h5 [S]+HOME
+				p Screenshot Selection
+				h5 mod+PageUp
+				p PlayerCtl Next 
+				h5 mod+PageDown
+				p PlayerCtl Previus
+				h5 mod+END
+				p PlayerCtl Pause
+			.i3ten.i3sectionGrid
+				h5 VolumeUp
+				p Increse Volume 5%
+				h5 volumeDown
+				p Decrease volume 5%
+				h5 MUTE
+				p Mute
+				h5 ShutDown
+				p Inmidiate ShutsOFF
+				h5 mod+9
+				p Blur Lock
+				h5 mod+0
+				p i3Exit Menu
+		
+		.bottomInfo
+			.specialKeys
+				p [mod]=Windows
+				p [super]=Alt
+				p [C]=Ctrl
+				p [S]=Shift 
+			.configFile
+				p i3 Configuration file at ~/.config/i3/config or use enviroment variable cfi 

@@ -11,7 +11,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/html/index.html"
+      template: "./src/pug/index.pug"
     })
   ],
   module: {
@@ -23,7 +23,11 @@ module.exports = merge(common, {
           "css-loader", //2. Turns css into commonjs
           "sass-loader" //1. Turns sass into css
         ]
-      }
+      },
+			{
+				test: /\.pug$/,
+				use: ["html-loader", "pug-html-loader"]
+			}
     ]
   }
 });
