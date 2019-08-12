@@ -1,0 +1,55 @@
+// Main Grid 
+@mixin autoGridMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 2em;
+};
+// 2 inline Keybinding & description Grid
+@mixin autoGridShorts {
+	display: grid;
+  grid-template-columns: repeat(2, minmax(5px, 1fr));
+  grid-gap: 0.2em;
+  font-size: 1.8rem;
+};
+// Desing details of keybind & description grid box
+@mixin keybindBox {
+	// keybind configuration 
+	h5 {
+		display: inline-block;
+    background-color: #501d11;
+    border-radius: 0.1em;
+    text-align: center;
+    color: white;
+	};
+	// description configuration 
+	p {
+    display: inline-block;
+    background-color: #501138;
+    border-radius: 0.1em;
+    text-align: center;
+    color: white;
+	};
+};
+// side to side section description title
+@mixin keybindBoxTitle {
+	background-color: white;
+	margin-top: 1.5em;
+	margin-bottom: 0.2em;
+	text-align: center;
+	color: black;
+	font-size: 2rem;
+};
+// Mian page first title confiduration
+@mixin topTitle {
+	grid-column: 1 / -1;
+	margin-top: 3em;
+	margin-bottom: 0em;
+	color: $topTileColor;
+	text-align: center;
+};
+// bottom 2 inline block left-rigth configuration
+@mixin bottomInfo {
+	display: grid;
+  grid-template-columns: 1fr 1fr; 
+};
+

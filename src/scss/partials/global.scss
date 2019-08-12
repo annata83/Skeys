@@ -1,0 +1,12 @@
+
+// for general margin & padding reset 
+* {
+	margin: 0px;
+	padding: 0px;
+}
+// Transparent background
+body {
+	background-color: $mainBackground;
+	//Transparent Background
+	//background-color: rgba(0, 0, 0, 0.9);
+}

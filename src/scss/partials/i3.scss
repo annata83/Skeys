@@ -1,0 +1,45 @@
+#i3 { 
+	//main grid column configuration
+	@include autoGridMain;
+	h2 {
+		// side to side section block title 
+		@include keybindBoxTitle;
+	};
+	//main Grid Box side margin
+	margin: 0em 2em;
+};
+#title {
+	// side to side fisrt main page title
+	@include topTitle;
+};
+// 2 block gird column configuration Keybind & description
+.boxShorts {
+	@include keybindBox;
+	@include autoGridShorts;
+};
+
+.footer {
+	@include bottomInfo;
+};
+.specialKeys {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 1em;
+  color: white;
+	p {
+		display: inline-block;
+	};
+};
+.configFile {
+	display: block;
+  font-size: 1.5rem;
+	margin: 1em;
+	text-align: right;
+	color: white;
+	p {
+		text-align: right;
+	};
+};
+
+
+
