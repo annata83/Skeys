@@ -1,15 +1,13 @@
-.navBar {
+#navigationbar {
   display: grid;
   grid-auto-flow: column;
-  color: white;
   font-size: 2rem;
-  text-align: center; }
-
-#navigationbar {
-  background-color: white;
-  color: back;
+  text-align: center; 
+	background-color: $navbarbg;
   position: fixed;
   top: 0px;
-  width: 100%; }
-  #navigationbar a {
-    color: black; }
+  width: 100%;
+	a {
+		color: $navbarFontColor;
+	};
+};

@@ -1,5 +1,6 @@
-#i3 { 
+.main { 
 	//main grid column configuration
+	height: 100vh;
 	@include autoGridMain;
 	h2 {
 		// side to side section block title 
@@ -10,7 +11,7 @@
 };
 #title {
 	// side to side fisrt main page title
-	@include topTitle;
+	@include topDescription;
 };
 // 2 block gird column configuration Keybind & description
 .boxShorts {
@@ -19,6 +20,7 @@
 };
 
 .footer {
+	grid-column: 1 / -1;
 	@include bottomInfo;
 };
 .specialKeys {
