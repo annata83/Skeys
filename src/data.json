@@ -1,214 +1,222 @@
 { 
-	"i3ShortCuts": {
-		"shortcut": {
-			"keybind": "mod+u",
-			"description": "No Borders"
-		},
-		"shortcut": {
+	"name":"i3", 
+	"info": {
+		"title": "Windows Manager",
+		"box": {
+			"sectionTitle":"Borders",
+			"shortcut": {
+				"keybind": "mod+u",
+				"description": "No Borders"
+			},
+			"shortcut": {
 			"keybind": "mod+y",
 			"description": "2px Border"
-		},
-		"shortcut": {
+			},
+			"shortcut": {
 			"keybind": "mod+i",
 			"description": "Normal Border"
-		},
-		"shortcut":{
-			"keybind": "mod+D",
-			"description": "Deactivate Gaps"
-		},
-		"shortcut": {
-			"keybind": "mod+G",
-			"description": "Activate Gaps"
-		},
-		"shortcut": {
-			"keybind": "mod+Q",
-			"description": "Kill Focused" 
-		},
-		"shortcut": {
-			"keybind": "mod+h",
-			"description": "Focus Left"
-		},
-		"shortcut": {
-			"keybind": "mod+j",
-			"description": "Focus Down" 
-		},
-		"shortcut": {
-			"keybind": "mod+k",
-			"description": "Focus Up"
-		},
-		"shortcut": {
-			"keybind": "mod+l",
-			"description": "Focus Right"
-		},
-		"shortcut": {
-			"keybind": "mod+Left",
-			"description": "Focus Left"
-		},
-		"shortcut": {
-			"keybind": "mod+Down",
-			"description": "Focus Down"
-		},
-		"shortcut": {
-			"keybind": "mod+Up",
-			"description": "Focus Up"
-		},
-		"shortcut": {
-			"keybind": "mod+right",
-			"description": "Focus Right"
-		},
-		"shortcut": {
-			"keybind": "mod+H",
-			"description": "Move Left"
-		},
-		"shortcut": {
-			"keybind": "mod+J",
-			"description": "Move Down"
-		},
-		"shortcut": {
-			"keybind": "mod+K",
-			"description": "Move UP"
-		},
-		"shortcut": {
-			"keybind": "mod+L",
-			"description": "Move Right"
-		},
-		"shortcut": {
-			"keybind": "mod+q",
-			"description": "Toogle Split"
-		},
-		"shortcut": {
-			"keybind": "mod+s",
-			"description": "Stacking Layout"
-		},
-		"shortcut": {
-			"keybind": "mod+w",
-			"description": "Tabbed Layout"
-		},
-		"shortcut": {
-			"keybind": "mod+e", 
-			"description": "Toogle Split Layout"
-		},
-		"shortcut": {
-			"keybind": "mod+-",
-			"description": "Show Scratchppad"
-		},
-		"shortcut": {
-			"keybind": "mod+_",
-			"description": "Move to Scratchpad"
-		},
-		"shortcut": {
-			"keybind": "mod+B",
-			"description": "Move Win to Back&Forth"
-		},
-		"shortcut": {
-			"keybind": "mod+b",
-			"description": "Workspace Back&Forth"
-		},
-		"shortcut": {
-			"keybind": "mod=[C]+Left",
-			"description": "Left Workspace"
-		},
-		"shortcut": {
-			"keybind": "mod+[C]+Right",
-			"description": "Right Workspace"
-		},
-		"shortcut": {
-			"keybind": "mod+Return",
-			"description": "Terminal"
-		},
-		"shortcut": {
-			"keybind": "mod+R",
-			"description": "Ranger"
-		},
-		"shortcut": {
-			"keybind": "mod+d",
-			"description": "Dmenu"
-		},
-		"shortcut": {
-			"keybind": "mod+z",
-			"description": "Xlunch"
-		},
-		"shortcut": {
-			"keybind": "Browser",
-			"description": "Chromium"
-		},
-		"shortcut":{
-			"keybind": "Mail",
-			"description": "Neomutt"
-		},
-		"shortcut": {
-			"keybind": "mod+space",
-			"description": "Jump tilling-Floating"
-		},
-		"shortcut": {	
-			"keybind": "mod+[S]+space",
-			"description": "Toogle Floating"
-		},
-		"shortcut": {
-			"keybind": "mod+r",
-			"description": "Toogle Resize"
-		},
-		"shortcut": {
-			"keybind": "mod+s",
-			"description": "Toogle Sticky"
-		},
-		"shortcut": {
-			"keybind": "mod+[C]+l",
-			"description": "Sticky Bottom Right"
-		},
-		"shortcut": {
-			"keybind": "mod+[C]+Left",
-			"description": "Sticky Bottom Left"
-		},
-		"shortcut": {
-			"keybind": "HOME",
-			"description": "Fullscreen Screenshot"
-		},
-		"shortcut": {
-			"keybind": "[S]+HOME",
-			"description": "Screenshot Selection"
-		},
-		"shortcut": {
-			"keybind": "mod+PageUp ",
-			"description": "PlayerCtl Next"
-		},
-		"shortcut": {
-			"keybind": "mod+PageDown",
-			"description": "PlayerCtl Previus"
-		},
-		"shortcut": {
-			"keybind": "mod+END",
-			"description": "PlayerCtl Pause"
-		},
-		"shortcut": {
-			"keybind": "VolumeUp",
-			"description": "Increse Volume 5%"
-		},
-		"shortcut": {
-			"keybind": "volumeDown",
-			"description": "Decrease volume 5%"
-		},
-		"shortcut": {
-			"keybind": "MUTE",
-			"description": "Mute"
-		},
-		"shortcut": {
-			"keybind": "ShutDown",
-			"description": "ShutsOFF"
-		},
-		"shortcut": {
-			"keybind": "mod+9",
-			"description": "Blur Lock"
-		},
-		"shortcut":{
-			"keybind": "mod+0",
-			"description": "Menu"
+			},
+			"sectionTitle": "Gaps",	
+			"shortcut": {
+				"keybind": "mod+D",
+				"description": "Deactivate Gaps"
+			},
+			"shortcut": {
+				"keybind": "mod+G",
+				"description": "Activate Gaps"
+			},
+			"sectionTitle": "Basic Moves",
+			"shortcut": {
+				"keybind": "mod+Q",
+				"description": "Kill Focused" 
+			},
+			"shortcut": {
+				"keybind": "mod+h",
+				"description": "Focus Left"
+			},
+			"shortcut": {
+				"keybind": "mod+j",
+				"description": "Focus Down" 
+			},
+			"shortcut": {
+				"keybind": "mod+k",
+				"description": "Focus Up"
+			},
+			"shortcut": {
+				"keybind": "mod+l",
+				"description": "Focus Right"
+			},
+			"shortcut": {
+				"keybind": "mod+Left",
+				"description": "Focus Left"
+			},
+			"shortcut": {
+				"keybind": "mod+Down",
+				"description": "Focus Down"
+			},
+			"shortcut": {
+				"keybind": "mod+Up",
+				"description": "Focus Up"
+			},
+			"shortcut": {
+				"keybind": "mod+right",
+				"description": "Focus Right"
+			},
+			"shortcut": {
+				"keybind": "mod+H",
+				"description": "Move Left"
+			},
+			"shortcut": {
+				"keybind": "mod+J",
+				"description": "Move Down"
+			},
+			"shortcut": {
+				"keybind": "mod+K",
+				"description": "Move UP"
+			},
+			"shortcut": {
+				"keybind": "mod+L",
+				"description": "Move Right"
+			}},
+		"box": {
+			"sectionTitle": "Layout",
+			"shortcut": {
+				"keybind": "mod+q",
+				"description": "Toogle Split"
+			},
+			"shortcut": {
+				"keybind": "mod+s",
+				"description": "Stacking Layout"
+			},
+			"shortcut": {
+				"keybind": "mod+w",
+				"description": "Tabbed Layout"
+			},
+			"shortcut": {
+				"keybind": "mod+e", 
+				"description": "Toogle Split Layout"
+			},
+			"sectionTitle": "Workspace & Scratchpad",
+			"shortcut": {
+				"keybind": "mod+-",
+				"description": "Show Scratchppad"
+			},
+			"shortcut": {
+				"keybind": "mod+_",
+				"description": "Move to Scratchpad"
+			},
+			"shortcut": {
+				"keybind": "mod+B",
+				"description": "Move Win to Back&Forth"
+			},
+			"shortcut": {
+				"keybind": "mod+b",
+				"description": "Workspace Back&Forth"
+			},
+			"shortcut": {
+				"keybind": "mod=[C]+Left",
+				"description": "Left Workspace"
+			},
+			"shortcut": {
+				"keybind": "mod+[C]+Right",
+				"description": "Right Workspace"
+			},
+			"sectionTitle": "Apps",
+			"shortcut": {
+				"keybind": "mod+Return",
+				"description": "Terminal"
+			},
+			"shortcut": {
+				"keybind": "mod+R",
+				"description": "Ranger"
+			},
+			"shortcut": {
+				"keybind": "mod+d",
+				"description": "Dmenu"
+			},
+			"shortcut": {
+				"keybind": "mod+z",
+				"description": "Xlunch"
+			},
+			"shortcut": {
+				"keybind": "Browser",
+				"description": "Chromium"
+			},
+			"shortcut":{
+				"keybind": "Mail",
+				"description": "Neomutt"
+			},
+			"sectionTitle": "Windows Manipulation",
+			"shortcut": {
+				"keybind": "mod+space",
+				"description": "Jump tilling-Floating"
+			},
+			"shortcut": {	
+				"keybind": "mod+[S]+space",
+				"description": "Toogle Floating"
+			},
+			"shortcut": {
+				"keybind": "mod+r",
+				"description": "Toogle Resize"
+			},
+			"shortcut": {
+				"keybind": "mod+s",
+				"description": "Toogle Sticky"
+			},
+			"shortcut": {
+				"keybind": "mod+[C]+l",
+				"description": "Sticky Bottom Right"
+			},
+			"shortcut": {
+				"keybind": "mod+[C]+Left",
+				"description": "Sticky Bottom Left"
+			}},
+		"box": {
+			"sectionTitle": "Special keys",
+			"shortcut": {
+				"keybind": "HOME",
+				"description": "Fullscreen Screenshot"
+			},
+			"shortcut": {
+				"keybind": "[S]+HOME",
+				"description": "Screenshot Selection"
+			},
+			"shortcut": {
+				"keybind": "mod+PageUp ",
+				"description": "PlayerCtl Next"
+			},
+			"shortcut": {
+				"keybind": "mod+PageDown",
+				"description": "PlayerCtl Previus"
+			},
+			"shortcut": {
+				"keybind": "mod+END",
+				"description": "PlayerCtl Pause"
+			},
+			"shortcut": {
+				"keybind": "VolumeUp",
+				"description": "Increse Volume 5%"
+			},
+			"shortcut": {
+				"keybind": "volumeDown",
+				"description": "Decrease volume 5%"
+			},
+			"shortcut": {
+				"keybind": "MUTE",
+				"description": "Mute"
+			},
+			"shortcut": {
+				"keybind": "ShutDown",
+				"description": "ShutsOFF"
+			},
+			"shortcut": {
+				"keybind": "mod+9",
+				"description": "Blur Lock"
+			},
+			"shortcut":{
+				"keybind": "mod+0",
+				"description": "Menu"
+			}}
 		}
-	}
 }
 
-	
-
-
-
-			
