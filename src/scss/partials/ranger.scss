@@ -1,0 +1,22 @@
+.main { 
+	//main grid column configuration
+	height: 100vh;	
+	@include autoGridMain;
+	h2 {
+		// side to side section block title 
+		@include keybindBoxTitle;
+	};
+	//main Grid Box side margin
+	margin: 0em 2em;
+};
+#title {
+	// side to side fisrt main page title
+	@include topDescription;
+};
+// 2 block gird column configuration Keybind & description
+.boxShorts {
+	@include keybindBox;
+	@include autoGridShorts;
+};
+
+
