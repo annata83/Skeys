@@ -34,7 +34,7 @@
 // side to side section description title
 @mixin keybindBoxTitle {
 	background-color: $keybindBoxBg;
-	margin-top: 1.5em;
+	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 	text-align: center;
 	color: $whiteFont;
@@ -43,12 +43,14 @@
 };
 // Mainn page first title description
 @mixin topDescription {
-	grid-column: 1 / -1;
-	margin-top: 3em;
-	margin-bottom: 0em;
 	background-color: $pageDescriptionBg;
 	color: $topTileColor;
+	margin: 1em;
 	text-align: center;
+	font-size: 2rem;
+	h1 {
+		font-size: 4em;
+	};
 };
 // bottom 2 inline block left-rigth configuration
 @mixin bottomInfo {
