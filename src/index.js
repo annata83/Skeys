@@ -1,7 +1,7 @@
 import './scss/styles.scss';
-import {test} from './controllers/invisible';
+import {setDisplayEvent, makeVisibleakeVisible,jaja} from './controllers/invisible';
 
-test();
+
 
 
 
