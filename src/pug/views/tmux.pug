@@ -1,0 +1,95 @@
+#tmux.title
+	h2 Terminal Multiplexer
+.main
+	.leftBox
+		.boxTitle
+		h2 New SS
+		.boxShorts
+			h5 $T
+			p unassing
+			h5 $T new
+			p unassing
+			h5 :new
+			p unassing
+		.boxTitle
+			h2 New SS + title
+		.boxShorts
+			h5 $T new -s mySS
+			p unassing
+			h5 :new -s mysession
+			p unassing
+		.boxTitle
+			h2 Kill all SS but current
+		.boxShorts
+			h5 $T kill-session -a -t mySS
+			p unassing
+		.boxTitle
+			h2 kill/Delete all but mySS
+		.boxShorts
+			h5 ^+b $
+			p Rename Session
+			h5 ^+b d
+			p Detach From SS
+			h5 :attach -d
+			p Maximize window by detach other clients
+			h5 T ls
+			p unassing
+			h5 T list-sessions
+			p unassing
+			h5 ^+b s
+			p Show all sessions
+		.boxTitle
+			h2 Attach last SS
+		.boxShorts
+			h5 T a
+			p unassing
+			h5 T at
+			p unassing
+			h5 T attach
+			p unassing
+			h5 T attach-session
+			p unassing
+		.boxTitle
+			h2 Attach to a SS with SS name
+		.boxShorts
+			h5 T a -t mysession
+			p unassing
+			h5 T at -t mysession
+			p unassing
+			h5 T attach-session -t mysession
+			p unassing
+			h5 ^+b (
+			p Move Previus SS
+			h5 ^+b )
+			p Move Next SS
+
+	.middleBox
+		.boxTitle
+			h2 Windows
+		.boxShorts
+			h5 tmux new -s mysession -n mywindow
+			p New SS with the SS name & window name
+			h5 ^+b c
+			p Create Window
+			h5 ^+b ,
+			p Rename Window
+			h5 ^+b &
+			p Close current window
+			h5 ^+b p
+			p Previus window
+			h5 ^+b n
+			p next window
+			h5 ^+b 0...9
+			p Switch/select window by number
+			h5 :swap-window -s 2 -t 1
+			p Reorder window, swap window number 2(src) and 1(dst)
+			h5 :swap-window -t -1
+			p Move current window to the left by one position
+
+	.RigthBox
+		.boxTitle
+			h2 Panes
+
+
+
+	
